@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+$body-color: #FDF0DB;
+$primary-text-color: #31172E;
+$secondary-text-color: #716358;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body-color;
+  font-family: Poppins, sans-serif;
+
+  a{
+    text-decoration: none;
+    color: $primary-text-color;
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  // =================================
+  // =========== Skip to Content ===========
+  // =================================
+
+  .skip-link{
+   position: absolute;
+   top: -60px;
+   left: 0;
+   background-color: $secondary-text-color;
+   color: white;
+   padding: 8px;
+   z-index: 100;
+  }
+
+  .skip-link:focus{
+    top: 0;
+  }
+}
+
+// =================================
+// =========== Navbar ===========
+// =================================
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 6.25rem 0px 6.25rem;
+
+  .brand-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $primary-text-color;
+    cursor: pointer;
+    min-height: 44px;
+    min-width: 44px;
+
+    span{
+      color: $secondary-text-color;
+    }
+
+  }
+  
+  .navbar-links{
+    display: flex;
+    gap: 40px;
+    ul{
+      display: flex;
+      gap: 2rem;
+    } 
+    .hamburger{
+      display: none;
+      cursor: pointer;
+      width: 25px;
+    }
+  }
+}
+
+// =================================
+// =========== Main ===========
+// =================================
+
+
+main{
+  .image-hero{
+    margin: 0rem 6.25rem;
+    img{
+      width: 100%;
+      height: 27.313rem;
+      object-fit: cover;
+      margin-top: 4rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 18px 19px #c7b9c5;
+      object-position: 100% 77%;
+    }
+  }
+
+  .menu{
+    margin: 0rem 6.25rem;
+    text-align: center;
+    margin-top: 6.25rem;
+
+    h2{
+      font-size: 40px;
+      font-weight: 500;
+    }
+
+    p{
+      color: $secondary-text-color;
+      margin-top: 8px;
+    }
+
+    // =================================
+    // =========== Cards List ===========
+    // =================================
+
+    .cards-menu{
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px 16px;
+
+      .card{
+        background-color: white;
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+
+          img{
+            position: relative;
+            border-radius: 8px 8px 0 0;
+            width: 100%;
+            height: 200px;
+          }
+
+          .rating{
+            position: absolute;
+            background-color: rgb(73, 143, 248);
+            width: 67px;
+            border-radius: 8px 0 8px 0;
+            padding: 6px 10px;
+            font-weight: 500;
+            color: $primary-text-color;
+            z-index: 100;
+            .uil-star{
+              color: #e6ff05;
+              font-weight: 500;
+            }
+          }
+
+        h3{
+          font-weight: 600;
+          font-size: 1.25rem;
+          margin-top: 14px;
+        }
+
+        p{
+          color: $secondary-text-color;
+          margin-top: 8px;
+        }
+
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          margin-top: 14px;
+          margin-bottom: 24px;
+          cursor: pointer;
+          border-radius: 8px;
+          background-color: $primary-text-color;
+          color: white;
+          min-width: 44px;
+          min-height: 44px;
+          width: 200px;
+        }
+
+        button:focus{
+          outline: 4px solid $secondary-text-color;
+        }
+      }
+    }
+
+    // =================================
+    // =========== Cards Detail ===========
+    // =================================
+
+    .cards-detail{
+      margin-top: 3rem;
+      display: grid;
+
+      .card{
+        background-color: white;
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+
+          img{
+            position: relative;
+            border-radius: 8px 8px 0 0;
+            width: 100%;
+          }
+
+          .rating{
+            position: absolute;
+            background-color: rgb(73, 143, 248);
+            width: 67px;
+            border-radius: 8px 0 8px 0;
+            padding: 6px 10px;
+            font-weight: 500;
+            color: $primary-text-color;
+            z-index: 100;
+            .uil-star{
+              color: #e6ff05;
+              font-weight: 500;
+            }
+          }
+
+        h3{
+          font-weight: 600;
+          font-size: 1.25rem;
+          margin-top: 14px;
+        }
+
+        p{
+          color: $secondary-text-color;
+          margin-top: 8px;
+        }
+
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          margin-top: 14px;
+          margin-bottom: 24px;
+          cursor: pointer;
+          border-radius: 8px;
+          background-color: $primary-text-color;
+          color: white;
+          min-width: 44px;
+          min-height: 44px;
+          width: 200px;
+        }
+
+        button:focus{
+          outline: 4px solid $secondary-text-color;
+        }
+      }
+    }
+  }
+
+  // =================================
+  // =========== About ===========
+  // =================================
+
+  .about{
+    margin: 10rem 6.25rem;
+    text-align: center;
+    
+    h2{
+      font-size: 40px;
+      font-weight: 500;
+    }
+
+    p{
+      color: $secondary-text-color;
+      margin-top: 8px;
+    }
+
+    .isi{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 58px;
+
+      .image-about{
+        img{
+          width: 520px;
+          border-radius: 14px;
+          box-shadow: 0 18px 19px #c7b9c5;
+        }
+      }
+
+      .desc-about{
+        text-align: end;
+        width: 609px;
+
+        h3{
+          font-size: 36px;
+          font-weight: 400;
+        }
+
+        p{
+          font-size: 18px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+
+  // =================================
+  // =========== Location ===========
+  // =================================
+  .location{
+    margin: 2rem 6.25rem;
+    text-align: center;
+    
+    h2{
+      font-size: 40px;
+      font-weight: 500;
+    }
+
+    p{
+      color: $secondary-text-color;
+      margin-top: 8px;
+    }
+
+    .our-location{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 58px;
+      align-items: center;
+
+      img{
+        width: 520px;
+        border-radius: 14px;
+        box-shadow: 0 18px 19px #c7b9c5;
+      }
+
+      .dec-location{
+        text-align: start;
+
+        h3{
+          font-size: 36px;
+          font-weight: 400;
+        }
+
+        p{
+          font-size: 18px;
+          font-weight: 300;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+
+// =================================
+// =========== Footer ===========
+// =================================
+
+footer{
+  margin: 2rem 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6.25rem;
+  border-top: 1px solid #716358;
+  padding: 40px 0;
+
+  .brand-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $primary-text-color;
+    cursor: pointer;
+
+    span{
+      color: $secondary-text-color;
+    } 
+
+  }
+
+  .section{
+    display: flex;
+    gap: 78px;
+
+    p{
+      color: $primary-text-color;
+      font-weight: 600;
+    }
+
+    ul{
+      margin-top: 25px;
+      li{
+        color: $secondary-text-color;
+      }
+    }
+    
+  }
+}
+
+// ============================
+// ========Syarat hero image============
+// ============================
+
+@media screen and (max-width : 1200px) {
+  .navbar{
+    margin: 2rem 1.25rem 0px 1.25rem;
+  }
+  main{
+    .image-hero{
+      margin: 0;
+    }
+    .menu{
+      margin: 2rem 1.25rem;
+    }
+    .location{
+      margin-top: 2rem;
+    }
+  }
+  footer{
+    margin: 2rem 1.25rem;
+  }
+}
+
+// ============================
+// ========Syarat hero image============
+// ============================
+
+@media screen and (max-width : 1040px) {
+  main{
+    .menu{
+      .cards-menu{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 16px;
+      }
+    }
+
+    .about{
+      .isi{
+        flex-direction: column;
+
+        .desc-about{
+          margin-top: 40px;
+          text-align: justify;
+          width: 609px;
+  
+          h3{
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .location{
+      .our-location{
+        flex-direction: column-reverse;
+  
+        .dec-location{
+          margin-top: 40px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 800px) {
+  .navbar {
+    .navbar-links{
+
+      .hamburger{
+        display: block;
+        border: 0;
+        width: 44px;
+        background-color: $body-color;
+        i{
+          font-size: 44px;
+        }
+      }
+
+      .nav-menu{
+        position: fixed;
+        left: -110%;
+        top: 100px;
+        flex-direction: column;
+        background-color: $secondary-text-color;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 999;
+
+        .nav-link{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          a{
+            color: white ;
+          }
+        }
+      }
+
+      .active{
+        left: 0;
+      }
+  
+    }
+  }
+
+  main{
+    .menu{
+      .cards-menu{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .btn-place{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .about{
+      .isi{
+        .desc-about{
+          width: 500px;
+        }
+      }
+    }
+  }
+
+  footer{
+    flex-direction: column;
+    align-items: center;
+    .brand-title {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width : 570px) {
+  main{
+    .menu{
+      .cards-menu{
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .btn-place{
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .about{
+      .isi{
+        .desc-about{
+          width: 400px;
+        }
+        .image-about{
+          img{
+            width: 400px;
+          }
+        }
+      }
+    }
+
+    .location{
+      .our-location{
+        img{
+          width: 400px;
+          border-radius: 14px;
+          box-shadow: 0 18px 19px #c7b9c5;
+        }
+        .dec-location{
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main{
+    .menu{
+      h2{
+        font-size: 30px;
+      }
+      .btn-place{
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .about{
+      margin: 2rem 2.25rem;
+      h2{
+        font-size: 30px;
+      }
+      h3{
+        font-size: 25px;
+      }
+      .isi{
+        .desc-about{
+          width: 300px;
+        }
+        .image-about{
+          img{
+            width: 300px;
+          }
+        }
+      }
+    }
+
+    .location{
+      h2{
+        font-size: 30px;
+      }
+      h3{
+        font-size: 25px;
+      }
+      margin: 2rem 2.25rem;
+      .our-location{
+        img{
+          width: 300px;
+          border-radius: 14px;
+          box-shadow: 0 18px 19px #c7b9c5;
+        }
+        .dec-location{
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  footer{
+    .section{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+/*
+   Like
+*/
+.like {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #db0000;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="a list of restaurants that have good food and have various types of food"
+    />
+    <meta name="theme-color" content="#31172E"/>
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+    <title>Restaurant</title>
+  </head>
+  <body>
+    <header>
+      <!-- Skip link -->
+      <a href="#mainContent" class="skip-link">Menuju ke menu</a>
+
+      <nav id="navigationDrawer" class="navbar">
+        <h1 class="brand-title">Rest<span>aurant</span></h1>
+        <div class="navbar-links">
+          <button id="hamburgerButton" class="hamburger" aria-label="Hamburger Menu">
+            <i class="uil uil-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-link"><a href="/">Home</a></li>
+            <li class="nav-link"><a href="#/like">Favorite</a></li>
+            <li class="nav-link">
+              <a href="https://github.com/MohLutfiFauzi" target="_blank"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="mainContent" tabindex="0">
+      <section class="image-hero">
+        <picture>
+          <source media="(max-width: 600px)" srcset="./images/hero-image_4-small.jpg">
+          <img src="./images/hero-image_4-large.jpg" alt="a loot of food" />
+        </picture>
+      </section>
+
+      <section class="menu"></section>
+
+      <section class="about">
+        <h2>About Us</h2>
+        <p>we have been around for a long time</p>
+        <div class="isi">
+          <div class="image-about">
+            <picture>
+              <source media="(max-width: 600px)" srcset="./images/hero-image_1-small.jpg">
+              <img
+                src="./images/hero-image_1-large.jpg"
+                alt="card menu in my restourant"
+              />
+            </picture>
+          </div>
+
+          <div class="desc-about">
+            <h3>The perfect place to hang out!</h3>
+            <p>
+              Looking for a place to have your next lunch meeting, or to blow
+              off steam after work? Gaslight Social has the perfect atmosphere
+              for whatever you need. Serving counter style burritos from
+              Bohemian Burrito, 37 beers on draft, arcade games, golf simulators
+              & a great outdoor space, you won't run out of things to eat, drink
+              or do. Stop by Gaslight Social the next time you go out.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="location">
+        <h2>Our Location</h2>
+        <p>we are open 24 hours but we are closed on national holidays</p>
+        <div class="our-location">
+          <div class="dec-location">
+            <h3>We Have 3 Place</h3>
+            <p>
+              <i class="uil uil-map-marker"></i>
+              7390 WI-67, Plymouth, WI 53073, United States
+            </p>
+            <p>
+              <i class="uil uil-map-marker"></i>
+              Ms Alice Smith Apartment 1c 213 Derrick Street Boston
+            </p>
+            <p>
+              <i class="uil uil-map-marker"></i>
+              Mr James Smith Flat 7 118 London W6 7HB UK
+            </p>
+          </div>
+
+          <div class="image-location">
+            <picture>
+              <source media="(max-width: 600px)" srcset="./images/hero-image_3-small.jpg">
+              <img src="./images/hero-image_3-small.jpg" alt="our location in my restaurants" />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h1 class="brand-title">Rest<span>aurant</span></h1>
+      <div class="section">
+        <div class="Information">
+          <p>Information</p>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Events</a></li>
+          </ul>
+        </div>
+        <div class="Our-Menu">
+          <p>Our Menu</p>
+          <ul>
+            <li><a href="#">Spesial</a></li>
+            <li><a href="#">From</a></li>
+            <li><a href="#">Catogories</a></li>
+          </ul>
+        </div>
+        <div class="Helpful-Links">
+          <p>Links</p>
+          <ul>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Suport</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
