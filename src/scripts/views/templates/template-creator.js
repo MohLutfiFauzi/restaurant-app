@@ -46,7 +46,7 @@ const createRestaurantItemTemplate = (restaurant) => `
       <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL}medium/${restaurant.pictureId}" alt="restaurants name is ${restaurant.name}" id="${restaurant.id}" />
       <h3>${restaurant.name}</h3>
       <p>${restaurant.city}</p>
-      <a href="${`/#/detail/${restaurant.id}`}">Detail Restaurant</a>
+      <a class="button-detail" href="${`/#/detail/${restaurant.id}`}">Detail Restaurant</a>
   </div>
 `;
 

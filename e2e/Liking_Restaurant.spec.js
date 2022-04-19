@@ -1,10 +1,17 @@
-Feature('Liking Restaurant');
+Feature('Like Restaurant');
 
-Before(({ I }) => {
-  I.amOnPage('/#/detail/s1knt6za9kkfw1e867');
-});
+Scenario('Liking a restaurant', async ({ I }) => {
+  I.amOnPage('#/');
 
-Scenario('test Liked one of the restaurants', ({ I }) => {
+  I.executeScript('window.scrollTo(0, 1000);');
+  I.wait(5);
+  I.seeElement('a.button-detail');
+  I.waitForElement('a.button-detail');
+  I.click(locate('a.button-detail').first());
+  I.wait(20);
   I.seeElement('#likeButton');
-  I.see('[aria-label="like this restaurant"]', '.like');
+  I.click('#likeButton');
+
+  I.amOnPage('/#/like');
+  I.seeElement('.button-detail');
 });

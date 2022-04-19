@@ -20,6 +20,8 @@
         "no-restricted-globals": "off",
         "linebreak-style":"off",
         "no-undef":"off",
-        "no-alert":"off"
+        "no-alert":"off",
+        "no-prototype-builtins":"off",
+        "consistent-return":"off"
     }
 }

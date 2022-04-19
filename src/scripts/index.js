@@ -1,13 +1,9 @@
-// import 'regenerator-runtime';
+import 'regenerator-runtime';
 import '../styles/main.scss';
 import App from './views/app';
 import swRegister from './utils/sw-register';
 // import 'lazysizes';
 // import 'lazysizes/plugins/parent-fit/ls.parent-fit';
-
-import('regenerator-runtime')
-  .then((module) => module.default)
-  .catch((error) => alert(error));
 
 import('lazysizes')
   .then((module) => module.default)
